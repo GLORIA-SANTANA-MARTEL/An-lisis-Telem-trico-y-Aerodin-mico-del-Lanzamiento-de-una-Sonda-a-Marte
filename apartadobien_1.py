@@ -8,6 +8,3 @@ coeficientes = calibrar_sensor()
 print(coeficientes)
 
 
-PRUEBA CAMBIO 
-
-prueba cambio 2 chill
