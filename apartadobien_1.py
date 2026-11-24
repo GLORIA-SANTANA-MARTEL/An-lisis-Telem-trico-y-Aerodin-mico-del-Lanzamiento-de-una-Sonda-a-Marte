@@ -6,3 +6,6 @@ print(lu)
 
 coeficientes = calibrar_sensor()
 print(coeficientes)
+
+
+PRUEBA CAMBIO 
