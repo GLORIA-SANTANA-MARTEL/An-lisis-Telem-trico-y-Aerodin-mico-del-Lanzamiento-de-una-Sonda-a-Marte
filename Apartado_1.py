@@ -1,9 +1,5 @@
-from scipy.linalg import lu_factor, lu_solve
-from numpy import dot, linalg, array, zeros
-from operator import matmul
-import numpy as np
-from numpy.linalg import cond
-from fichero_matematico import my_jacobi, my_Gauss, my_LU
+from numpy import array
+from fichero_matematico import my_Jacobi, my_Gauss, my_LU, my_GaussSeidel
 
 A = array([[1, 1, 1], 
            [1, 1, -1], 
@@ -11,6 +7,12 @@ A = array([[1, 1, 1],
 
 b = array([50000, 15000, 0])
 
-solucion = my_LU(A, b)
+Gauss = my_Gauss(A, b)
+LU = my_LU(A, b)
+Jacobi = my_Jacobi(A, b)
+GaussSeidel = my_GaussSeidel(A, b)
 
-print(solucion)
+print("Solución por Gauss:", Gauss)
+print("Solución por LU:", LU)
+print("Solución por Jacobi:", Jacobi)
+print("Solución por Gauss-Seidel:", GaussSeidel)
