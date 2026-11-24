@@ -10,6 +10,10 @@ def grafica_masas(ax, gauss, lu):
     ax.set_title("Balance de Masas de Propelente") #nombre grafica
     ax.set_xlabel("Tanques de propelente") #nombre eje x
     ax.set_ylabel("Masa [kg]") #nombre eje y
+    #mejora 1
+    ax.set_ylim(0, 26000)  #fija eje y desde 0 kg para ver la proporción real y dejar hueco arriba
+    #mejora 2
+    ax.grid(True)  # dibuja líneas de referencia para leer mejor las masas del eje y, el true la enciende, sino asumiria q siempre dberia estar
     ax.legend() #nombre leyenda(que representa cada color etc)
 
 
