@@ -2,7 +2,8 @@
 
 ### Librerías de importación
 from scipy.linalg import lu_factor, lu_solve
-from numpy import dot, norm, linalg, array, zeros, matmul, transpose
+from numpy import dot, array, zeros, matmul, transpose
+from numpy.linalg import norm
 import numpy as np
 from numpy.linalg import cond, solve
 
@@ -72,7 +73,7 @@ def my_LU(A,b):
 
 ### Jacobi
 
-def my_jacobi(A,b): 
+def my_Jacobi(A,b): 
 
     N = len(b)
     x, D, R = zeros(N), zeros(N), zeros((N,N))
@@ -99,7 +100,7 @@ def my_jacobi(A,b):
 
 ### Gauss Seidel
 
-def Gauss_Seidel(A,b):
+def my_GaussSeidel(A,b):
 
     N = len(b)
     x1, x2, b1 = zeros(N), zeros(N), zeros(N)
