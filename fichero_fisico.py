@@ -36,4 +36,3 @@ def calibrar_sensor():
 #4.CALCULO DE ACELERACION ESTRUCTURAL
 #5.
 #6.
-
