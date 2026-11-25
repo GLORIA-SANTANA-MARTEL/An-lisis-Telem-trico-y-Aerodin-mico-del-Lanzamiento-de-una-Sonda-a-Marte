@@ -17,9 +17,54 @@ def grafica_masas(ax, gauss, lu):
     ax.legend() #nombre leyenda(que representa cada color etc)
 
 
+#2 SENSOR 
+def grafica_sensor()
+    ax.clear()
 
-#2 SENSOR PITOT
+    ax.set_title("Calibración del Sensor de Presión Dinámica")
+    ax.set_xlabel()
+    ax.set_ylabel()
+
+    ax.legend()
+
+
 #3 ALTITUD
+def grafica_altitud()
+    ax.clear()
+
+    ax.set_title("Reconstruccion de la trayectoria, altitud")
+    ax.set_xlabel("")
+    ax.set_ylabel("")
+
+    ax.legend()
+
+
 #4 DENSIDAD
+def grafica_densidad()
+    ax.clear()
+
+    ax.set_title("Estimación de la densidad atmosférica")
+    ax.set_xlabel("")
+    ax.set_ylabel("")
+
+    ax.legend()
+
 #5 ACELERACION
+def grafica_aceleracion()
+    ax.clear()
+
+    ax.set_title("Calculo de la aceleración estructural")
+    ax.set_xlabel("")
+    ax.set_ylabel("")
+
+    ax.legend()
+
 #6 MACH 1
+def grafica_mach1()
+    ax.clear()
+
+    ax.set_title("Instante crítico de Mach 1")
+    ax.set_xlabel("")
+    ax.set_ylabel("")
+
+    ax.legend()
